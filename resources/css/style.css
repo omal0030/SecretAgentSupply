@@ -91,34 +91,53 @@ nav a {
 }
 
 .image-box {
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
 }
 
 .image-box img {
-  height: 9rem;
+  margin: 2rem 0;
+  max-height: 9rem;
+  max-width: 8rem;
+  height: auto;
+  width: auto;
 }
 
 .product-box h3 {
-
+  display: block;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 /* Location and Hours */
 
 .info-container {
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .info-box {
-
+  display: block;
+  min-width: 35%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .info-box h3 {
-
+  background-color: black;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
 }
 
 .info-box p {
-
+  color: black;
 }
 
 /* Footer */
