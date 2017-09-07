@@ -63,6 +63,10 @@ html {
   background-color: firebrick;
 }
 
+.tablet {
+  display: none;
+}
+
 .products {
   display: flex;
   padding: 0.75rem 0;
@@ -83,6 +87,14 @@ nav a {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 3rem;
+}
+
+.products-container-tablet {
+  display: none;
+}
+
+.products-container-phone {
+  display: none;
 }
 
 .product-box {
@@ -148,4 +160,100 @@ footer {
   text-align: left;
   width: 100%;
   padding: 5rem 0;
+}
+
+/* Media - Tablet */
+
+@media only screen and (max-width: 1024px) {
+
+  .products-container-phone,
+  .products-container,
+  .products {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+    padding: 0.75rem 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .products-container-tablet {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .product-box {
+    min-width: 47%;
+  }
+}
+
+/* Media - Phone */
+
+@media only screen and (max-width: 480px) {
+
+  .products-container-tablet,
+  .products-container,
+  .products {
+    display: none;
+  }
+
+  .new-arrival {
+    height: 15rem;
+  }
+
+  .title-box {
+    width: 100%;
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .title-box h1 {
+    font-size: 1rem;
+  }
+
+  .title-box h2 {
+    font-size: 0.77rem;
+  }
+
+  .tablet {
+    display: flex;
+    padding: 0.75rem 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .products-container-phone {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .product-box {
+    min-width: 90%;
+  }
+
+  .info-container {
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+  .info-box {
+    display: block;
+    min-width: 90%;
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+}
+
+footer {
+  padding: 5rem;
+}
+
 }
